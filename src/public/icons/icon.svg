@@ -1,0 +1,11 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="32" fill="#FF0000"/>
+  <g fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top arrow: shifted slightly down and centered -->
+    <path d="M35 58 C 35 40, 93 40, 93 58"/>
+    <path d="M80 48 L 93 61 L 106 48"/>
+    <!-- Bottom arrow: shifted slightly up and centered -->
+    <path d="M93 70 C 93 88, 35 88, 35 70"/>
+    <path d="M48 80 L 35 67 L 22 80"/>
+  </g>
+</svg>

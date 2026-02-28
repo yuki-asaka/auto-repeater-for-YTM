@@ -1,0 +1,37 @@
+{
+  "name": "auto-repeater-for-ytm",
+  "version": "1.0.0",
+  "description": "YouTube Music Auto Repeat Extension",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "package": "npm run build && node scripts/package.js",
+    "test": "vitest",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "chrome-extension",
+    "youtube-music",
+    "auto-repeat"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.33",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.6",
+    "@types/chrome": "^0.1.37",
+    "@types/jsdom": "^28.0.0",
+    "@types/node": "^25.3.2",
+    "@vitest/browser": "^4.0.18",
+    "bestzip": "^2.2.1",
+    "jsdom": "^28.1.0",
+    "semantic-release": "^25.0.3",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18"
+  }
+}
