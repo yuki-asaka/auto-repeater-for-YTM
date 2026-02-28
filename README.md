@@ -64,6 +64,16 @@ npm test
 This project follows **AI-DLC (AI Development Life Cycle)** for spec-driven development.
 All specifications, designs, and task management are documented within the `.kiro/` directory. For more details, see `GEMINI.md`.
 
+### Automated Releases & Versioning
+This project uses [semantic-release](https://github.com/semantic-release/semantic-release) for automated versioning and GitHub Releases. To trigger a release, follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
+
+- `fix(scope): ...` for patches (1.0.1)
+- `feat(scope): ...` for new features (1.1.0)
+- `perf(scope): ...` for performance improvements (1.1.0)
+- `BREAKING CHANGE: ...` in the footer for major releases (2.0.0)
+
+On every push to the `main` branch, the CI/CD pipeline will automatically determine the next version, update `package.json`, generate a changelog, create a git tag, and publish a new GitHub Release with the extension ZIP attached.
+
 ## 📄 License
 
 ISC License

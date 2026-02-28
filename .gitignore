@@ -9,9 +9,6 @@ yarn-error.log*
 dist/
 dist-ssr/
 *.local
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
 
 # IDEs and Editors
 .idea/
