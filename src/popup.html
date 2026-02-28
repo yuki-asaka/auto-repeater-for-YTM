@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Auto Repeat for YTM</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+      font-family: sans-serif;
+    }
+    h1 {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .option {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Repeat Mode</h1>
+  <div class="option">
+    <input type="radio" id="mode-none" name="repeat-mode" value="none">
+    <label for="mode-none">Off</label>
+  </div>
+  <div class="option">
+    <input type="radio" id="mode-all" name="repeat-mode" value="all">
+    <label for="mode-all">All Repeat</label>
+  </div>
+  <div class="option">
+    <input type="radio" id="mode-one" name="repeat-mode" value="one">
+    <label for="mode-one">Single Repeat</label>
+  </div>
+  <script type="module" src="popup.ts"></script>
+</body>
+</html>
