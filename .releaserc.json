@@ -1,0 +1,38 @@
+{
+  "branches": ["main"],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "sed -i 's/\"version\": \".*\"/\"version\": \"'${nextRelease.version}'\"/' src/manifest.json && npm run package"
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "releases/*.zip",
+            "label": "Auto Repeater for YTM v${nextRelease.version} Extension"
+          }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["package.json", "src/manifest.json", "CHANGELOG.md"],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
+  ]
+}
